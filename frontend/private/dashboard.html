@@ -1,12 +1,39 @@
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <link rel="icon" type="image/jpeg" href="/images/icon.jpg" />
+    <link rel="stylesheet" href="/css/dashboard.css?v=9" />
   </head>
   <body>
-    <h1>
-      Congrats Idiot! You just logged in. You learned how to press a button.
-    </h1>
+    <img class="background-image" src="/images/wallpaper.jpg" alt="" />
+    <main class="dashboard-menu" aria-label="Dashboard menu">
+      <img class="menu-background" src="/images/scroll.jpg" alt="" />
+      <div class="menu-content">
+        <header class="profile-header">
+          <div class="profile-avatar">
+            <img
+              class="profile-frame"
+              src="/images/profile.jpg"
+              alt="Default user profile"
+              width="112"
+              height="112"
+            />
+            <!-- When a user photo is available, set its src and remove hidden. Keep profile-frame in place. -->
+            <img class="profile-photo" alt="User profile photo" hidden />
+          </div>
+          <h1 class="profile-name" id="profile-name">Admin</h1>
+        </header>
+        <nav class="dashboard-actions" aria-label="Dashboard actions">
+          <button class="menu-button" type="button" disabled>Account</button>
+          <button class="menu-button" type="button" disabled>Settings</button>
+          <button class="menu-button" type="button" disabled>
+            Administrator
+          </button>
+        </nav>
+      </div>
+    </main>
   </body>
 </html>

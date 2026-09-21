@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sign in | Strix</title>
     <link rel="icon" type="image/png" href="images/icon.jpg" />
-    <link rel="stylesheet" href="/css/login.css?v=1" />
+    <link rel="stylesheet" href="/css/login.css?v=4" />
   </head>
   <body>
     <img class="background-image" src="images/wallpaper.jpg" alt="" />
@@ -16,19 +16,31 @@
           <img src="images/icon.jpg" alt="" />
           <h1>Strix</h1>
         </div>
-        <h2>Sign in</h2>
-        <form action="/api/login" method="post">
+        <h2 id="loginTitle">Sign in</h2>
+        <form id="loginForm" action="/api/login" method="post">
           <input
+            id="email"
             type="email"
             name="email"
             placeholder="Enter Address"
+            autocomplete="email"
             required
           />
-          <button type="submit">Next</button>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter Password"
+            autocomplete="current-password"
+            hidden
+          />
+          <p id="loginError" aria-live="polite"></p>
+
+          <button id="nextButton" type="submit">Next</button>
         </form>
         <pre id="apiResponse" aria-live="polite"></pre>
       </main>
     </div>
-    <script src="js/login.js" defer></script>
+    <script src="/js/login.js?v=4" defer></script>
   </body>
 </html>

@@ -20,10 +20,11 @@ app.use(
     saveUninitialized: false,
     cookie: {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
+      secure: "auto",
+      // secure: process.env.NODE_ENV === "production", // uncomment this for production
       sameSite: "lax",
     },
-  })
+  }),
 );
 
 function requireLogin(req, res, next) {
