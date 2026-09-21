@@ -130,7 +130,7 @@ input[hidden] {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   transform: translateY(18px);
   text-align: center;
 }
@@ -146,3 +146,11 @@ input[hidden] {
   height: 42px;
   object-fit: contain;
 }
+
+.brand .brand-logo {
+  display: block;
+  width: auto;
+  height: 42px;
+  object-fit: contain;
+}
+

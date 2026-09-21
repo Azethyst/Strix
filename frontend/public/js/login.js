@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      button.textContent = "Login";
+      button.textContent = "Logging in";
 
       const response = await fetch("/api/login", {
         method: "POST",
